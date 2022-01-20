@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import CurrencyRow from './Converter/CurrencyRow';
+import './App.css'
 
 function App() {
   const [pkr , setPkr]  = useState();
@@ -35,7 +36,7 @@ function App() {
     <h1>Currency Converter</h1>
     <h3>PKR</h3>
       <CurrencyRow amount={fromAmount}    onChangeState={handleFromClick}/>
-      <div>=</div>
+      <div className="equals">=</div>
       <h3>USA</h3>
       <CurrencyRow  amount={toAmount}   onChangeState={handleToClick}/>
     </div>
